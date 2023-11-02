@@ -1,7 +1,8 @@
 let loader = document.querySelector(".loader");
+let wrap = document.querySelector(".wrap");
 
 window.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
-        loader.style.display = "none";
+        wrap.style.display = "none";
     }, 1000)
 })
