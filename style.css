@@ -1,68 +1,164 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-.wrap{
-    width: 100%;
-    height: 100vh;
+
+.container{
+  width: 95%;
+  margin: 0 auto;
 }
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+}
+
 .loader {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    top: 20rem;
-    left: 41rem;
-  }
-  .loader::before , .loader::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: #fff;
-    left: 50%;
-    top: 50%;
-    animation: rotate 1s ease-in infinite;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: 20rem;
+  left: 41rem;
 }
+
+.loader::before,
+.loader::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  left: 50%;
+  top: 50%;
+  animation: rotate 1s ease-in infinite;
+}
+
 .loader::after {
   width: 30px;
   height: 30px;
   background-color: #FF3D00;
-  animation: rotate 1s ease-in infinite, moveY 1s ease-in infinite ;
+  animation: rotate 1s ease-in infinite, moveY 1s ease-in infinite;
 }
 
 @keyframes moveY {
-  0% , 100% {top: 10%}
-  45% , 55% {top: 59%}
-  60% {top: 40%}
+
+  0%,
+  100% {
+    top: 10%
+  }
+
+  45%,
+  55% {
+    top: 59%
+  }
+
+  60% {
+    top: 40%
+  }
 }
+
 @keyframes rotate {
-  0% { transform: translate(-50%, -100%) rotate(0deg) scale(1 , 1)}
-  25%{ transform: translate(-50%, 0%) rotate(180deg) scale(1 , 1)}
-  45% , 55%{ transform: translate(-50%, 100%) rotate(180deg) scale(3 , 0.5)}
-  60%{ transform: translate(-50%, 100%) rotate(180deg) scale(1, 1)}
-  75%{ transform: translate(-50%, 0%) rotate(270deg) scale(1 , 1)}
-  100%{ transform: translate(-50%, -100%) rotate(360deg) scale(1 , 1)}
-}  
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-    position: fixed;
-    width: 100%;
-} 
-.links a{
-    margin-right: 40px;
-    color: #000;
+  0% {
+    transform: translate(-50%, -100%) rotate(0deg) scale(1, 1)
+  }
+
+  25% {
+    transform: translate(-50%, 0%) rotate(180deg) scale(1, 1)
+  }
+
+  45%,
+  55% {
+    transform: translate(-50%, 100%) rotate(180deg) scale(3, 0.5)
+  }
+
+  60% {
+    transform: translate(-50%, 100%) rotate(180deg) scale(1, 1)
+  }
+
+  75% {
+    transform: translate(-50%, 0%) rotate(270deg) scale(1, 1)
+  }
+
+  100% {
+    transform: translate(-50%, -100%) rotate(360deg) scale(1, 1)
+  }
 }
-.links select{
-    margin-right: 40px;
-    color: #000;
-    border: none;
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
 }
-.current{
-    color: #fff;
+
+#nav .links{
+  width: 100vh;
+}
+
+#nav .links a {
+  margin-right: 40px;
+}
+
+#nav .black {
+  color: #000;
+}
+
+.current {
+  color: #fff;
+}
+
+/* umumiy class */
+.btn {
+  padding: 13px 23px;
+  background-color: #1c2900;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.logo {
+  font-size: 40px;
+  color: #fff;
+}
+
+body {
+  background-image: url(https://themewagon.github.io/hairnic/img/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #90bc79;
+  width: 100%;
+  height: 100vh;
+}
+
+.part1 {
+  display: flex;
+}
+
+.right img{
+  width: 600px;
+  height: 700px;
+  margin-top: 13rem;
+  margin-left: 5rem;
+}
+
+.left{
+  margin-top: 20rem;
+  width: 600px;
+}
+
+.white{
+  color: #fff;
+}
+
+.white-thin{
+  color: #fff;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
 }
