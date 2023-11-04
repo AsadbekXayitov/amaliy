@@ -7,8 +7,3 @@ window.addEventListener("DOMContentLoaded", () => {
         wrap.style.display = "none";
     }, 1000)
 })
-if (nav) {
-    
-} else {
-    
-}
